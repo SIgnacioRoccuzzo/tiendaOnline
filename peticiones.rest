@@ -1,0 +1,44 @@
+GET http://localhost:3000/api/products
+###
+GET http://localhost:3000/api/products/64a71b2276c2d9c98b7713a6
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "mesa",
+    "description": "para comer",
+    "price": 250,
+    "available": true,
+    "stock": 300,
+    "department": "hogar"
+}
+
+###
+PUT http://localhost:3000/api/products/64a7cffb2ac9b76bd388132d
+Content-Type: application/json
+
+{
+    "price": 125,
+    "stock": 290
+}
+
+###
+DELETE http://localhost:3000/api/products/64a6dc5876c2d9c98b7713a3
+
+###
+GET http://localhost:3000/api/users
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{   
+    "username": "sebarock",
+    "email": "seba@hotmail.com",
+    "password": "12345"
+
+}
+
+###
+PUT http://localhost:3000/api/users/64a7e15c5673491ec02db07a/buy/64a7e7600063a2e34c44f562
